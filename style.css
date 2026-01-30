@@ -1,0 +1,163 @@
+body {
+  margin: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  max-width: 800px;
+}
+
+.title {
+  font-size: 24px;
+  color: rgb(49, 47, 47);
+  margin-bottom: 20px;
+}
+
+.input {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 25px 0px;
+}
+
+.inputFieldDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_field {
+  border-radius: 8px;
+  margin: 10px 25px 10px 0px;
+  padding: 8px;
+  /* border-color: rgb(18, 90, 90); */
+  border: 2px solid rgb(20, 102, 102);
+  opacity: 50%;
+  box-shadow: 6px 6px 3px rgb(20, 102, 102, .5);
+  width: 180px;
+}
+
+.input_field:focus {
+  outline: none;
+  border-color: #19431a;
+}
+
+.input_field::placeholder {
+  color: rgb(20, 102, 102);
+  opacity: 90%;
+}
+
+.add_btn,
+.edit_btn,
+.delete_btn {
+  background-color: rgb(61, 159, 61);
+  opacity: 90%;
+  color: white;
+  padding: 8px 15px;
+  width: 80px;
+  cursor: pointer;
+  border: none;
+  transition: backgroung-color .3s;
+  border-radius: 8px;
+  margin: 0px 5px;
+}
+
+.add_btn:hover,
+.edit_btn:hover,
+.delete_btn:hover {
+  background-color: rgb(108, 190, 108);
+}
+
+.add_btn:active,
+.edit_btn:active,
+.delete_btn:active {
+  background-color: rgb(39, 105, 39);
+}
+
+
+ul {
+  list-style-type: none;
+  border-radius: 10px;
+  margin: 0;
+  padding: 10px 5px;
+  width: 100%;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: rgb(151, 98, 201);
+  margin-bottom: 10px;
+  padding: 15px;
+  transition: backgroung-color .3s;
+  box-shadow: 2px 5px 10px rgb(131, 124, 124);
+  border-radius: 8px;
+  /* width: 700px; */
+}
+
+li:hover {
+  background-color: rgb(228, 192, 151, .3);
+}
+
+li:active {
+  background-color: rgb(229, 169, 100);
+}
+
+.item_div {
+  display: flex;
+  margin: 0;
+}
+
+.index_div {
+  font-weight: bold;
+  font-size: 18px;
+  color: #666;
+  min-width: 30px;
+}
+
+.name_div,
+.amount_div,
+.price_div,
+.total_price_div {
+  width: 100%;
+}
+
+.total_price_div {
+  font-weight: bold;
+  color: #333;
+}
+
+.delete_btn {
+  background-color: brown;
+}
+
+.total_count_div {
+  background-color: black;
+  color: rgb(230, 227, 227);
+  margin: 20px 0px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.total_count_span {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+.error-msg {
+  color: red;
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
