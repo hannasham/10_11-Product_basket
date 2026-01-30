@@ -59,16 +59,27 @@ body {
 }
 
 .add_btn:hover,
-.edit_btn:hover,
-.delete_btn:hover {
+.edit_btn:hover {
   background-color: rgb(108, 190, 108);
 }
 
+.delete_btn {
+  background-color: brown;
+}
+
+.delete_btn:hover {
+  background-color: rgb(198, 71, 71);
+}
+
 .add_btn:active,
-.edit_btn:active,
-.delete_btn:active {
+.edit_btn:active{
   background-color: rgb(39, 105, 39);
 }
+
+.delete_btn:active {
+  background-color: rgb(88, 31, 31);
+}
+
 
 
 ul {
@@ -125,9 +136,6 @@ li:active {
   color: #333;
 }
 
-.delete_btn {
-  background-color: brown;
-}
 
 .total_count_div {
   background-color: black;
